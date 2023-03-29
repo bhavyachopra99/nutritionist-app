@@ -15,8 +15,7 @@ var span = document.getElementsByClassName("close")[0];
 function calculate(){
  
   if(age.value=='' || height.value=='' || weight.value=='' || (male.checked==false && female.checked==false)){
-    modal.style.display = "block";
-    modalText.innerHTML = `All fields are required!`;
+    alert("All fields required to calculate BMI");
 
   }else{
     countBmi();
@@ -52,7 +51,7 @@ function countBmi(){
 
 resultArea.style.display = "block";
 document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
-document.querySelector("#result").innerHTML = bmi.toFixed(2);
+document.querySelector("#result").innerHTML = `<h2>${bmi.toFixed(2)}</h2>`;
 
 }
 

@@ -20,6 +20,8 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="STYLE.css">
 
+    <!-- bmi css file link  -->
+    <link rel="stylesheet" href="bmi.css">
 
 
 </head>
@@ -133,72 +135,42 @@
 
 <!-- facility section starts  -->
 
-<section class="facility" id="facility">
+<section class="bmi" id="bmi">
+    <h1 class="heading"><span>'</span> calculate your bmi<span>'</span></h1>
+    <div class="container">
+        <div class="box mx-auto p-5">
+            <div class="row m-5">
+                <div class="col-md-6">
+                    <label for="age"><h2>Age : </h2></label>
+                    <input type="text" class="text-input" id="age" autocomplete="off" placeholder="00" required/>
+                </div>
 
-<div class="container">
-
-<h1 class="heading"><span>'</span> our facilities <span>'</span></h1>
-
-<div class="box-container">
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img1.jpg" title="our team">
-            <img src="images/img1.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img2.jpg" title="our lab">
-            <img src="images/img2.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img3.jpg" title="emergency rooms">
-            <img src="images/img3.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img4.jpg" title="expert doctors">
-            <img src="images/img4.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img5.jpg" title="expert doctors">
-            <img src="images/img5.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img6.jpg" title="emergency rooms">
-            <img src="images/img6.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img7.jpg" title="expert doctors">
-            <img src="images/img7.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img8.jpg" title="emergency rooms">
-            <img src="images/img8.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="box" data-aos="zoom-in">
-        <a href="images/img9.jpg" title="enough beds">
-            <img src="images/img9.jpg" alt="">
-        </a>
-    </div>
-
-</div>
-
-</div>
-
+                <div class="col-md-6 btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-success">
+                      <input type="radio" name="radio" id="m" autocomplete="off"> <h2>Male</h2>
+                    </label>
+                    <label class="btn btn-success">
+                      <input type="radio" name="radio" id="f" autocomplete="off"> <h2>Female</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="row m-5 form-inline">
+                <div class="col-md-6">
+                    <label for="height"><h2>Height : <h2></label>
+                    <input type="number" id="height" placeholder = "height (cm)" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="weight"><h2>Weight : <h2></label>
+                    <input type="number" id="weight" placeholder = "weight (kg)" required>
+                </div>
+            </div>
+          <button class="btn btn-success px-lg-5 p-2 rounded-lg" id="submit" onclick="calculate();"><h2>Calculate BMI</h2></button>
+          <div class="result m-5">
+            <h2>Your BMI is</h2>
+            <div id="result"><h2>00.00</h2></div>
+            <h2 class="comment"></h2>
+          </div>
+      </div>
 </section>
 
 <!-- facility section ends -->
@@ -282,22 +254,6 @@
 <!-- footer section ends -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- jquery cdn link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -309,6 +265,15 @@
 
 <!-- custom js link  -->
 <script src="main.js"></script>
+
+<!-- bmi js link  -->
+<script src="bmi.js"></script>
+
+<!--popper for radiobutton-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
 <script>
 

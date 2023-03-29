@@ -388,94 +388,6 @@ header .fa-bars{
   color:#666;
 }
 
-.contact{
-  background:var(--black);
-}
-
-.contact .heading{
-  color:#fff;
-}
-
-.contact form{
-  text-align: center;
-}
-
-.contact form .inputBox{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .inputBox input, select{
-  height: 4rem;
-  width:49%;
-  padding:0 1rem;
-  margin:1rem 0;
-  font-size: 1.7rem;
-  color:var(--black);
-}
-
-.contact form textarea{
-  height:20rem;
-  resize: none;
-  padding:1rem;
-  font-size: 1.5rem;
-  width: 100%;
-}
-
-.contact form input[type="submit"]{
-  width:20rem;
-}
-
-.contact form input[type="submit"]:hover{
-  background:var(--black);
-}
-
-.post .box-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.post .box-container .box{
-  width:30rem;
-  margin:2rem 1rem;
-  overflow: hidden;
-  border-radius: .5rem;
-  box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
-}
-
-.post .box-container .box img{
-  height:20rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.post .box-container .box .content{
-  padding:0 1.5rem;
-}
-
-.post .box-container .box .content span{
-  color:#666;
-  font-size: 1.5rem;
-  display: block;
-  padding:1rem 0;
-}
-
-.post .box-container .box .content h3{
-  font-size: 2rem;
-  color:var(--black);
-}
-
-.post .box-container .box .content:hover h3{
-  color:var(--blue);
-}
-
-.post .box-container .box .content p{
-  font-size: 1.3rem;
-  color:var(--black);
-}
-
 .footer{
   background:var(--black);
 }
@@ -527,25 +439,6 @@ header .fa-bars{
   color:var(--blue);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header .fa-times{
   transform: rotate(180deg);
 }
@@ -596,12 +489,35 @@ header .fa-times{
     opacity: 1;
   }
 
-  .contact form .inputBox input, select{
-    width: 100%;
-  }
 
-  .contact form input[type="submit"]{
-    width:100%;
-  }
+}
 
+/*bmi*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.bmi{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto;
+  }
+.bmi .box {
+  width: 80%;
+  background: #fafafa;
+  margin-left:auto; 
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+  margin-bottom: 50px;
+}
+
+.bmi input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #21ca0e;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
 }
