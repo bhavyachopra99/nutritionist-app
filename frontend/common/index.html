@@ -16,7 +16,8 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/d33b16092c.js" crossorigin="anonymous"></script>
+  
     <!-- custom css file link  -->
     <link rel="stylesheet" href="STYLE.css">
 
@@ -39,11 +40,10 @@
     <nav class="nav">
         <ul>
             <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#facility">facility</a></li>
             <li><a href="#review">review</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a href="#post">post</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#bmi">BMI</a></li>
+            <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
@@ -86,43 +86,44 @@
 
 <section class="about" id="about">
 
-<div class="container">
-    <h1 class="heading"><span>'</span> our offering <span>'</span></h1>
-    <div class="row min-vh-100 d-md-flex align-items-center mb-lg-0 mb-md-5">
-        <div class="col1 me-md-4 mb-md-0 mb-5">
+<div class="container m-2 mx-auto" data-aos="fade-up">
+    <h1 class="heading"><span>'</span> our offering <span>'</span></h1><br>
+    <div class="row gx-5 mx-auto mb-lg-5">
+        <div class="col">
             <div class="card pb-4">
-                <span class="fab fa-envira mt-3"></span>
-                <p class="h4 pt-4">Garden Care</p>
-                <p class="p1 text-muted">
-                    Seeking justice in the world is a sed significant emotional and investment when we follow
-                    this
-                    call.
+                <span class="icon fas fa-dumbbell mt-3"></span>
+                <p class="h4 pt-4">Muscle gain</p>
+                <p class="p1 text-muted text-justify text-lowercase">
+                    <span class="text-uppercase">F</span>ocuses on increasing protein intake and consuming a surplus of calories to support muscle growth and development.
                 </p>
-                <span class="fas fa-arrow-right"></span>
             </div>
         </div>
-        <div class="col2 me-md-4 mb-md-0 mb-5">
+        <div class="col">
             <div class="card pb-4">
-                <span class="fas fa-cut mt-3"></span>
-                <p class="h4 pt-4">Lawn mowing</p>
-                <p class="p1 text-muted">
-                    Seeking justice in the world is a sed significant emotional and investment when we follow
-                    this
-                    call.
+                <span class="icon fas fa-weight-scale mt-3"></span>
+                <p class="h4 pt-4">Weight Loss</p>
+                <p class="p1 text-muted text-justify text-lowercase">
+                    <span class="text-uppercase">D</span>esigned to help individuals reduce their overall calorie intake and
+                    achieve a healthy body weight through a balanced, nutrient-dense diet.
                 </p>
-                <span class="fas fa-arrow-right"></span>
             </div>
         </div>
-        <div class="col3 me-md-4 mb-md-0 mb-5">
+        <div class="col">
             <div class="card pb-4">
-                <span class="fas fa-people-carry mt-3"></span>
-                <p class="h4 pt-4">Lawn care</p>
-                <p class="p1 text-muted">
-                    Seeking justice in the world is a sed significant emotional and investment when we follow
-                    this
-                    call.
+                <span class="icon fas fa-heart-pulse mt-3"></span>
+                <p class="h4 pt-4">Hypertension</p>
+                <p class="p1 text-muted text-justify text-lowercase">
+                    <span class="text-uppercase">f</span>ocuses on increasing protein intake and consuming a surplus of calories to support muscle growth and development.
                 </p>
-                <span class="fas fa-arrow-right"></span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card pb-4">
+                <span class="icon fas fa-hospital mt-3"></span>
+                <p class="h4 pt-4">Thyroid/PCOS/PCOD</p>
+                <p class="p1 text-muted text-justify text-lowercase">
+                    <span class="text-uppercase">d</span>esigned to support hormone balance and manage symptoms associated with thyroid disease, PCOS, or PCOD through healthier food choices.
+                </p>
             </div>
         </div>
     </div>
@@ -135,9 +136,29 @@
 
 <!-- facility section starts  -->
 
+<!-- facility section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<div class="container" data-aos="fade-left">
+
+<h1 class="heading"><span>'</span> people's review <span>'</span></h1>
+
+<div class="box-container">
+<div class='sk-ww-google-reviews' data-embed-id='128462'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+</div>
+
+</div>
+
+</section>
+
+<!-- review section ends  -->
+
 <section class="bmi" id="bmi">
-    <h1 class="heading"><span>'</span> calculate your bmi<span>'</span></h1>
-    <div class="container">
+    <h1 class="heading"><span>'</span> calculate your BMI<span>'</span></h1>
+    <div class="container" data-aos="fade-right">
         <div class="box mx-auto p-5">
             <div class="row m-5">
                 <div class="col-md-6">
@@ -173,31 +194,11 @@
       </div>
 </section>
 
-<!-- facility section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-<div class="container">
-
-<h1 class="heading"><span>'</span> people's review <span>'</span></h1>
-
-<div class="box-container">
-    <div class='sk-ww-google-reviews' data-embed-id='128462'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
-</div>
-
-</div>
-
-</section>
-
-<!-- review section ends  -->
 
 
 
 
-
-<!-- post section starts  -->
+<!-- post section 
 
 <section class="post" id="post">
 
@@ -208,8 +209,7 @@
     </div>
 
 </section>
-
-<!-- post section ends -->
+-->
 
 <!-- footer section starts  -->
 
@@ -219,27 +219,24 @@
 
         <div class="row">
 
-            <div class="col-md-4" data-aos="fade-right">
+            <div class="col-md-4" data-aos="fade-up">
                 <img src="../../images/black-logo.png" width="200" >
             </div>
-
             <div class="row col-md-4 text-center" data-aos="fade-up">
                 <h3 class="col-md-12">links</h3>
                 <div class="col-md-6">
                     <a href="#home">home</a>
-                    <a href="#about">about</a>
-                    <a href="#facility">facility</a>
+                    <a href="#review">review</a>
                 </div>
                 <div class="col-md-6">
-                <a href="#review">review</a>
-                <a href="#contact">contact</a>
-                <a href="#post">post</a>
+                <a href="#about">about us</a>
+                <a href="#bmi">BMI</a>
                 </div>
             </div>
 
-            <div class="col-md-4 text-center" data-aos="fade-left">
+            <div class="col-md-4 text-center" data-aos="fade-up">
                 <h3>Socials</h3>
-                <a href="https://m.facebook.com/key.2.health.by.renu.chopra/">facebook</a>
+                <a class="mt-5" href="https://m.facebook.com/key.2.health.by.renu.chopra/">facebook</a>
                 <a href="https://instagram.com/key.2.health">instagram</a>
             </div>
 
