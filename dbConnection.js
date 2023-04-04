@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+const dotenv = require('dotenv')
 var conn = mysql.createConnection({
     port:'3306',
     host: 'localhost', // Replace with your host name
