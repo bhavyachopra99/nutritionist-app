@@ -53,6 +53,7 @@ app.get('/', (req, res) => {
 app.post('/signup', async (req, res) => {
 
     const {name,password} = req.body;
+    console.log(name,password);
     if (!name || !password) return res.status(400).json({'message' : 'Username or pass missing'});
     const check = await LogInCollection.findOne({ 'name': name }).exec();
     if(check){

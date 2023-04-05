@@ -2,26 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Key2Health</title>
+
     <link rel="stylesheet" href="css/login.css">
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/d33b16092c.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
-
-    <h1>Login Form</h1>
-
-    <form action="/login" method="post" >
-        <input placeholder="Name" name="name" type="text">
-        <br>
-        <input placeholder="Password" name="password" type="password">
-        <br>
-        <input class="sub" type="submit">
-     <h3>Dont have a account ?</h3>
-    <a href="/signup">Create a new account</a>
-    </form>
-
-
     
+
+<!-- header section starts  -->
+
+<header>
+
+<div class="container">
+
+    <a href="/home" class="logo"><span>K</span>ey<span>2</span>Health</a>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="/home">home</a></li>
+            <li><a href="/home">review</a></li>
+            <li><a href="/home">about us</a></li>
+            <li><a href="/home">BMI</a></li>
+            <li><a href="/">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="fas fa-bars"></div>
+
+</div>
+
+</header>
+
+<!-- header section ends  -->
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <form action="/login" method="post" class="mt-5">
+                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                <p class="text-white-50 mb-5">Please enter your login and password!</p>
+  
+                <div class="form-outline form-white mb-4">
+                  <input name="name" type="name" id="name" class="form-control form-control-lg" placeholder="Name"/>
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                  <input name="password" type="password" id="pass" class="form-control form-control-lg" placeholder="Password"/>
+                </div>
+  
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                </form>
+  
+              </div>
+  
+              <div>
+                <p class="mb-0">Don't have an account? <a href="/signup" class="text-white-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- home section starts  -->
+
 </body>
 </html>

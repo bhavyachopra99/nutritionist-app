@@ -2,24 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link rel="stylesheet" href="css/login.css">
+    <title>Key2Health</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/d33b16092c.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
     
-<h1>Sign Up</h1>
 
-    <form action="/signup" method="post" >
-        <input placeholder="Name" name="name" type="text">
-        <br>
-        <input placeholder="Password" name="password" type="password">
-        <br>
-        <input class="sub" type="submit">
-    </form>
+<script type="text/javascript">
+		function validate() {
+            var fname = document.getElementById("fname").value;
+            var fnameout = document.getElementById("fnameout");
 
-       <a href="/">Go back to login page</a>
+            var pass = document.getElementById("pass").value;
+            var passout = document.getElementById("passout");
 
-</body>
+            var cpass = document.getElementById("cpass").value;
+            var cpassout = document.getElementById("cpassout");
+
+            var phone = document.getElementById("phone").value;
+            var phoneout = document.getElementById("phoneout");
+
+			var remail = /.*@.*\..+/;
+            var rename = /^[A-Za-z]{3,10}$/;
+            var repass = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}]).{8,32}$/;
+            var rephone = /^\d{10}$/;
+            
+            if (rename.test(fname)) {
+				fnameout.innerHTML=""
+			}
+			else {
+				fnameout.innerHTML="Not a valid first name"
+			}
+
+
+            if (rephone.test(phone)) {
+				phoneout.innerHTML=""
+			}
+			else {
+				phoneout.innerHTML="Not a valid phone number"
+			}
+
+            if (repass.test(pass)) {
+				passout.innerHTML=""
+			}
+			else {
+				passout.innerHTML="Not a valid Password, have a capital, number and a symbol"
+			}
+            if (pass == cpass) {
+				cpassout.innerHTML=""
+			}
+			else {
+				cpassout.innerHTML="Password do not match"
+			}
+		}
+</script>
+<!-- header section starts  -->
+
+<header>
+
+<div class="container">
+
+    <a href="/home" class="logo"><span>K</span>ey<span>2</span>Health</a>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="/home">home</a></li>
+            <li><a href="/home">review</a></li>
+            <li><a href="/home">about us</a></li>
+            <li><a href="/home">BMI</a></li>
+            <li><a href="/">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="fas fa-bars"></div>
+
+</div>
+
+</header>
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <form action="/signup" method="post" class="mt-5">
+                <h2 class="fw-bold mb-2 text-uppercase">Signup</h2>
+                <p class="text-white-50 mb-5">Please enter your login and password!</p>
+  
+                <div class="form-outline form-white mb-4">
+                  <input name="name" type="name" id="fname" placeholder="Enter name *" class="form-control form-control-lg" onkeyup="validate()" />
+                  <div id="fnameout"></div>
+                </div>
+
+
+                <div class="form-outline form-white mb-4">
+                  <input type="text" id="phone" placeholder="Enter phone *" class="form-control form-control-lg" onkeyup="validate()" />
+                  <div id="phoneout"></div>
+                </div>
+
+  
+                <div class="form-outline form-white mb-4">
+                  <input name="password" type="password" placeholder="Enter password *" id="pass" class="form-control form-control-lg" onkeyup="validate()"/>
+                  <div id="passout"></div>
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                    <input type="password" class="form-control form-control-lg"  placeholder="Confirm Password *" id="cpass" onkeyup="validate()"/>
+                    <div id="cpassout"></div>
+                </div>
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Signup</button>
+                </form>
+  
+              </div>
+  
+              <div>
+                <p class="mb-0">Already have an account? <a href="/" class="text-white-50 fw-bold">Log In</a>
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
+
 </html>
